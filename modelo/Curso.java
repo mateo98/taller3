@@ -24,7 +24,7 @@ public class Curso {
     }
 
     public void setCreditos(int nuevosCreditos) {
-        this.creditos = creditos;
+        this.creditos = nuevosCreditos;
     }
 
     public double getNota() {
@@ -44,6 +44,9 @@ public class Curso {
     }
 
     public boolean estaCalificado(){
+       if(nota == 0){
+           return false;
+       }
         return true;
     }
 
