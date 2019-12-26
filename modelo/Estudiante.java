@@ -79,4 +79,12 @@ public class Estudiante {
     }
 
 
+    public double calcularPromedio(){
+        double promedio =  (curso1.getNota()*curso1.getCreditos()+curso2.getNota()+curso2.getCreditos()+
+                curso3.getNota()*curso3.getCreditos()+ curso4.getNota()+ curso4.getCreditos()+
+                curso5.getNota()*curso5.getCreditos())/(curso1.getCreditos()+curso2.getCreditos()+curso3.getCreditos()+
+                curso4.getCreditos()+curso5.getCreditos());
+
+        return promedio;
+    }
 }
