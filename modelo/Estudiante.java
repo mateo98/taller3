@@ -72,4 +72,9 @@ public class Estudiante {
 
         return null;
     }
+
+    public void asignarNota(String codigoCurso, double notaCurso){
+        Curso curso = buscarCurso(codigoCurso);
+        curso.setNota(notaCurso);
+    }
 }
