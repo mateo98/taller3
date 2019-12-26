@@ -9,12 +9,40 @@ public class Estudiante {
     private Curso curso3;
     private Curso curso4;
     private Curso curso5;
-
+    
     public Estudiante(int codigo, String nombre, String apellido) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
-   
+    public boolean asignarCurso(Curso curso){
+       if(curso1 == null) {
+           curso1 = new Curso(curso.getCodigoCurso(), curso.getNombreCurso(), curso.getCreditos());
+           System.out.println("Curso registrado");
+           return true;
+       }
+       if(curso2 == null){
+           curso2 = new Curso(curso.getCodigoCurso(), curso.getNombreCurso(), curso.getCreditos());
+           System.out.println("Curso registrado");
+           return true;
+       }
+       if(curso3 == null){
+           curso3 = new Curso(curso.getCodigoCurso(), curso.getNombreCurso(), curso.getCreditos());
+           System.out.println("Curso registrado");
+           return true;
+       }
+       if(curso4 == null){
+           curso4 = new Curso(curso.getCodigoCurso(), curso.getNombreCurso(), curso.getCreditos());
+           System.out.println("Curso registrado");
+           return true;
+       }
+       if(curso5 == null){
+           curso5 = new Curso(curso.getCodigoCurso(), curso.getNombreCurso(), curso.getCreditos());
+           System.out.println("Curso registrado");
+           return true;
+       }
+        System.out.println("Ya tiene todos los cursos registrados");
+        return true;
+    }
 }

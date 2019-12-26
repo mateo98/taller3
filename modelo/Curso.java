@@ -50,4 +50,7 @@ public class Curso {
         return true;
     }
 
+    public String getCodigoCurso() {
+        return codigoCurso;
+    }
 }
