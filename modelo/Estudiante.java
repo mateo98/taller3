@@ -77,4 +77,6 @@ public class Estudiante {
         Curso curso = buscarCurso(codigoCurso);
         curso.setNota(notaCurso);
     }
+
+
 }
