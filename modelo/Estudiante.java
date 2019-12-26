@@ -9,7 +9,7 @@ public class Estudiante {
     private Curso curso3;
     private Curso curso4;
     private Curso curso5;
-    
+
     public Estudiante(int codigo, String nombre, String apellido) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -43,6 +43,6 @@ public class Estudiante {
            return true;
        }
         System.out.println("Ya tiene todos los cursos registrados");
-        return true;
+        return false;
     }
 }
