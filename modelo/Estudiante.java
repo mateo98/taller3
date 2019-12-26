@@ -45,4 +45,31 @@ public class Estudiante {
         System.out.println("Ya tiene todos los cursos registrados");
         return false;
     }
+
+    public boolean pensumIncluyeCurso(String codigoCurso){
+        if(buscarCurso(codigoCurso) != null){
+            return true;
+        }
+        return false;
+    }
+
+    public Curso buscarCurso(String codigoCurso){
+        if(curso1.getCodigoCurso() == codigoCurso) {
+            return curso1;
+        }
+        if(curso2.getCodigoCurso() == codigoCurso){
+            return curso2;
+        }
+        if(curso3.getCodigoCurso() == codigoCurso){
+            return curso3;
+        }
+        if(curso4.getCodigoCurso() == codigoCurso){
+            return curso4;
+        }
+        if(curso5.getCodigoCurso() == codigoCurso){
+            return curso5;
+        }
+
+        return null;
+    }
 }
